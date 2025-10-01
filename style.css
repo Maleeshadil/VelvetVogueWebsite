@@ -1,0 +1,980 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer a {
+  margin: 0 10px;
+  color: #333;
+}
+
+.hero-section {
+  padding: 5rem 0;
+  color: #000000;
+  background-color: #e0eeec;
+  border-radius: 10px;
+}
+.hero-content h1 {
+  font-weight: bold;
+}
+.hero-content a {
+  color: #ffffff;
+  background-color: #000000;
+  border: #000000;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.hero-content .txt-3 {
+  background-color: #e6c744;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.hero-content .txt-1 {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.brand-partners {
+    background-color: #fdd835; /* Light background for better visibility */
+    padding: 20px 0; /* Reduce padding to make the banner less tall */
+}
+
+.brand-partners h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.brand-partners .brand-logo {
+    width: 50px; /* Decrease logo size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.brand-partners .brand-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .brand-partners .brand-logo {
+        width: 40px; /* Smaller size for mobile screens */
+    }
+}
+/* Container setup */
+.payday-sale {
+  background-color: #fdd835;
+  padding: 0;
+}
+
+.payday-sale-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.payday-sale-grid {
+  display: flex;
+  align-items: stretch; /* Make both columns equal height */
+  min-height: 500px;
+}
+
+/* Image fills left half */
+.payday-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.payday-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio while covering */
+  display: block;
+}
+
+/* Content fills right half */
+.payday-content {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+}
+
+.payday-content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.payday-content h2 span {
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.payday-content p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.payday-content .date {
+  font-size: 14px;
+  margin-bottom: 4px; /* Tight gap */
+}
+.payday-content .terms {
+  font-size: 13px;
+  margin-top: 0; /* Remove extra spacing */
+  margin-bottom: 20px; /* Keep spacing below it */
+  color: #444;
+}
+
+.shop-btn {
+  display: inline-block; /* Ensure it only takes up necessary width */
+  padding: 14px 28px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  width: 150px;
+}
+
+.shop-btn:hover {
+  background-color: #333;
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #fff; /* Ensure text remains white on hover */
+}
+
+.newsletter {
+  background-color: #e6c744;
+  color: #000;
+  padding: 5rem 0;
+}
+
+/* .app-download {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+
+.app-buttons .btn {
+  margin: 0 1rem;
+} */
+
+/* App Download Section styling */
+.app-download {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.app-download-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.app-content {
+  flex: 1;
+  min-width: 300px; /* Ensure enough space for text and buttons */
+  text-align: left;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.app-buttons img {
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.app-buttons img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.app-preview img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Custom navbar styling */
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.custom-navbar .navbar-nav:first-child {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-nav:first-child .nav-item {
+  display: inline-block;
+}
+
+.custom-navbar .navbar-nav:first-child .nav-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #007bff;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.custom-navbar .navbar-nav:first-child .nav-link:hover {
+  background-color: #598ec7;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .navbar-nav:first-child .nav-item a.active {
+  background-color: #0c5baf;
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* Cart link styling */
+.custom-navbar .navbar-nav:last-child .nav-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #007bff;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.custom-navbar .navbar-nav:last-child .nav-link:hover {
+  background-color: #598ec7;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* .custom-navbar .navbar-nav:last-child .nav-link .badge {
+  background-color: #007bff;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+} */
+
+.cart {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Cart Page Styling */
+
+/* Cart Section */
+#cart-items .card {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+#cart-items .card-body {
+  padding: 1rem;
+}
+
+#cart-items .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#cart-items .img-fluid {
+  max-height: 120px;
+  object-fit: cover;
+}
+
+#cart-items .size-select {
+  width: 80px;
+}
+
+#cart-items .form-check {
+  margin: 0;
+}
+
+#cart-items .remove-item {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+}
+
+/* Order Summary */
+#cart-summary .card {
+  border-radius: 8px;
+}
+
+#cart-summary h5 {
+  font-weight: 600;
+}
+
+#proceed-checkout {
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#proceed-checkout:hover {
+  background-color: #343a40;
+}
+
+/* New Arrivals, Young’s Favourite, Shop Products, Mission-Vision, Team, Contact Info, Login, Signup, and Cart styling */
+.new-arrivals .card,
+.youngs-favourite .card,
+.shop-products .card,
+.mission-vision .card,
+.team-section .card,
+.contact-info .card,
+.login-form .card,
+.signup-form .card,
+.cart-section .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-arrivals .card:hover,
+.youngs-favourite .card:hover,
+.shop-products .card:hover,
+.mission-vision .card:hover,
+.team-section .card:hover,
+.contact-info .card:hover,
+.login-form .card:hover,
+.signup-form .card:hover,
+.cart-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.new-arrivals .card-img-top,
+.youngs-favourite .card-img-top,
+.shop-products .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Ensure consistent card width and padding */
+.new-arrivals .card,
+.youngs-favourite .card,
+.shop-products .card,
+.mission-vision .card,
+.team-section .card,
+.contact-info .card,
+.login-form .card,
+.signup-form .card,
+.cart-section .card {
+  width: 100%;
+  padding: 1rem;
+}
+
+.new-arrivals .card-body,
+.youngs-favourite .card-body,
+.shop-products .card-body,
+.mission-vision .card-body,
+.team-section .card-body,
+.contact-info .card-body,
+.login-form .card-body,
+.signup-form .card-body,
+.cart-section .card-body {
+  padding: 1.25rem;
+}
+
+/* Adjust Young’s Favourite card width for centering */
+.youngs-favourite .card {
+  max-width: 300px; /* Optional: Set a max width to control card size */
+  margin: 0 auto; /* Center each card individually if needed */
+}
+
+/*Footer section*/
+.hr {
+  background-color: #5e6073;
+}
+/* Footer styling */
+.footer {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .list-unstyled a {
+  color: #91928f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer .list-unstyled a:hover {
+  color: #007bff;
+}
+
+.social-links a {
+  transition: transform 0.3s ease;
+}
+.txt-footer {
+  color: #5f6769;
+  margin-bottom: 0px;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Filter Section styling */
+.filter-section {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  min-height: 100%;
+  border-right: 1px solid #dee2e6;
+  position: relative; /* Provide context for z-index */
+}
+
+.filter-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.filter-group {
+  position: relative; /* Ensure dropdowns are contained */
+  z-index: 10; /* Prevent overlap with other sections */
+}
+
+.filter-group h6 {
+  font-size: 0.95rem;
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-group .form-select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #495057;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.filter-group .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.filter-card .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-card .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+/* About Page Styling */
+
+/* Our Story Section */
+.about-story {
+  padding: 60px 0;
+}
+
+.about-story img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+/* Team Section */
+.team-section {
+  padding: 60px 0;
+}
+
+.team-section .card-img-top {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.cta-section .btn-primary {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .filter-section,
+  .shop-products {
+    width: 100%;
+  }
+
+  .filter-card {
+    margin-bottom: 20px;
+  }
+} */
+/* Contact Us Page Styling */
+
+/* Contact Information Section */
+.contact-info {
+  padding: 60px 0;
+}
+
+.contact-info .card {
+  min-height: 150px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.contact-form .card {
+  border: none;
+  background-color: #fff;
+}
+
+.contact-form .form-control {
+  border-radius: 4px;
+  border-color: #ced4da;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.contact-form .form-label {
+  font-size: 0.95rem;
+}
+
+/* Location Section */
+.location-section {
+  padding: 60px 0;
+}
+
+.location-section .ratio {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.location-section iframe {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.location-section iframe:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+  flex-wrap: wrap; /* Ensures buttons wrap if needed */
+}
+
+.button-group a {
+  margin: 0; /* Reset any default margins */
+}
+/* Login Page Styling */
+
+/* Login Form Section */
+.login-form {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.login-form .card {
+  border: none;
+  background-color: #fff;
+}
+
+.login-form .form-control {
+  border-radius: 4px;
+  border-color: #ced4da;
+}
+
+.login-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 10px;
+  border-color: #32373e;
+  font-size: 14px;
+}
+
+.login-form .form-label {
+  font-size: 0.95rem;
+}
+#btnLogin {
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #04aa6d;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+#btnLogin:hover {
+  background: #34ad75;
+}
+
+/* Error Message */
+.error-message {
+  display: none;
+  color: #d73a49;
+  background-color: #fdd;
+  border: 1px solid #f9c;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Sign Up Text */
+.signup-text {
+  font-size: 14px;
+  color: #586069;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-link {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Signup Page Styling */
+
+/* Signup Form Section */
+.signup-form {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Fallback background color */
+}
+
+.signup-form .card {
+  border: none;
+  background-color: #fff;
+}
+
+.signup-form .form-control {
+  border-radius: 4px;
+  border-color: #ced4da;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.signup-form .form-label {
+  font-size: 0.95rem;
+}
+
+.signup-form .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 10px;
+  border-color: #32373e;
+  font-size: 14px;
+}
+
+/* Error Message */
+.error-message {
+  display: none;
+  color: #d73a49;
+  background-color: #fdd;
+  border: 1px solid #f9c;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Sign Up Text */
+.signup-text {
+  font-size: 14px;
+  color: #586069;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-link {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+/* signup  Buttons */
+#btnsignup {
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #04aa6d;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+#btnsignup:hover {
+  background: #34ad75;
+}
+
+/* Password Validation */
+.validation-container {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  color: #555;
+  display: none;
+}
+
+.validation-point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.validation-point i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.valid {
+  color: #63e6be; /* Green color for valid icon */
+}
+
+.invalid {
+  color: #ff6b6b; /* Red color for invalid icon */
+}
+
+i[ms-code-pw-validation-icon="true"] {
+  display: none;
+}
+
+i[ms-code-pw-validation-icon="false"] {
+  display: flex;
+}
+
+/* Input Error State */
+input.error {
+  border-color: #d73a49;
+}
+/* Checkout Page Styling */
+
+/* Checkout Container */
+.checkout-container {
+  padding: 40px 0;  
+}
+
+/* Order Summary Card */
+.checkout .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.checkout .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.checkout .card-body.bg-light {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.checkout .card-title.text-primary {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Responsive adjustments for footer columns */
+@media (max-width: 576px) {
+  .footer .col-6,
+  .footer .col-4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .social-links {
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .payday-sale-grid {
+    flex-direction: column; /* Stack image above content */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .payday-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .payday-content {
+    margin-top: 20px;
+    max-width: 90%;
+    padding: 0 10px;
+  }
+
+  .shop-btn {
+    margin: 20px auto 0;
+  }
+
+  .date,
+  .terms {
+    text-align: center;
+  }
+
+  .brand-partners .container-fluid {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+    gap: 50px; /* Adjusted gap for smaller screens */
+  }
+
+  /*App download section*/
+  .app-download-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-content {
+    text-align: center;
+  }
+
+  .app-buttons {
+    justify-content: center;
+  }
+
+  .app-preview img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  /* About Story Section: Stack on smaller screens */
+  .about-story .row {
+    flex-direction: column-reverse;
+  }
+
+  .about-story .col-md-6 {
+    text-align: center;
+  }
+
+  .about-story img {
+    margin-bottom: 20px;
+  }
+
+  /* Contact Info Section: Stack on smaller screens */
+  .contact-info .row {
+    flex-direction: column;
+  }
+
+  .contact-info .col-md-4 {
+    width: 100%;
+  }
+}
