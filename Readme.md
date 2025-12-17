@@ -1,5 +1,8 @@
 # Velvet Vogue - Online Clothing Store
 
+![ Velvet-Vogue](https://github.com/user-attachments/assets/010c6be1-cfcd-4461-b87d-84f63f072250)
+
+
 Welcome to **Velvet Vogue**, an online clothing store designed to provide a seamless shopping experience for trendy casualwear and formal wear. This multi-page website showcases a vast selection of clothing and accessories for young adults who want to express their identity through their style.
 
 ## Features
